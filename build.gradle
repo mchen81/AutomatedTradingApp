@@ -14,6 +14,15 @@ dependencies {
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
 }
 
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'com.demo.Application'
+        )
+    }
+}
+
 test {
     useJUnitPlatform()
 }
